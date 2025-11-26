@@ -7,7 +7,7 @@ function App() {
     <>
       <header className="main-header">
         <nav>
-          <div className="logo">SITE-CARROS</div>
+          <div className="logo">AUTO ELITE CARROS</div>
           <ul className="nav-links">
             {/* Link para a Home */}
             <li><Link to="/">Home</Link></li>
@@ -23,7 +23,7 @@ function App() {
       </main>
       
       <footer className="main-footer">
-        <p>&copy; 2025 SITE-CARROS. Todos os direitos reservados.</p>
+        <p>&copy; 2025 AUTO ELITE CARROS. Todos os direitos reservados.</p>
       </footer>
     </>
   );

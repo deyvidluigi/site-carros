@@ -5,7 +5,7 @@ import React from 'react';
 function Home() {
   return (
     <div className="home-container">
-      <h1>Bem-vindo ao SITE-CARROS!</h1>
+      <h1>Bem-vindo ao AUTO ELITE CARROS!</h1>
       <p>O seu destino certo para encontrar os melhores veículos do mercado.</p>
       
       <section className="destaques">
