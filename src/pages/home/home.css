@@ -1,0 +1,144 @@
+/* --- Título e Descrição Principal --- */
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.catalog-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.catalog-header p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Seção de Galeria de Destaques --- */
+
+.gallery-section {
+    margin-bottom: 60px;
+}
+
+.gallery-section h2 {
+    font-size: 1.8em;
+    color: #007bff; /* Azul primário */
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.car-list {
+    display: flex; /* Para organizar em colunas */
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.car-item {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    width: 100%; /* Em telas pequenas */
+    max-width: 350px; /* Largura máxima para visualização em desktop */
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-item:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.car-item h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 5px;
+}
+
+.car-item p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+/* --- Seção de Tabela de Preços --- */
+
+.table-section {
+    margin-bottom: 40px;
+}
+
+.table-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse; /* Para remover o espaço entre as bordas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.price-table th {
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.price-table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Fundo cinza claro para linhas pares */
+}
+
+.price-table tr:hover {
+    background-color: #e9e9e9; /* Destaque ao passar o mouse */
+}
+
+/* Estilo para a coluna de preços */
+.price-table td:nth-child(2) {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Estilo para a coluna de categoria */
+.price-table td:nth-child(3) {
+    font-style: italic;
+    color: #777;
+}
+
+/* --- Responsividade Básica (Opcional, mas Recomendado) --- */
+@media (max-width: 768px) {
+    .car-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-item {
+        max-width: 90%;
+    }
+
+    .price-table th, .price-table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
